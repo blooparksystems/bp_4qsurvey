@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<template id="iperceptions4qsurvey" inherit_id="website.layout" name="iperceptions4qsurvey">
+			<xpath expr="//div[@id='wrapwrap']" position="before">
+				<t t-if="website and website.iperceptions4qsurvey">
+                    <!-- 4Q Survey-->
+                    <t t-raw="website.iperceptions4qsurvey_script" />
+				</t>
+			</xpath>
+		</template>
+
+	</data>
+</openerp>

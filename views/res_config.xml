@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- Add 4Q Survey usage code snippet in global website settings -->
+		<record id="view_website_config_settings_snippet_inherit" model="ir.ui.view">
+			<field name="name">Website settings</field>
+			<field name="model">website.config.settings</field>
+			<field name="inherit_id" ref="website.view_website_config_settings" />
+			<field name="arch" type="xml">
+				<xpath expr="//group[@string='Domain']" position="inside">
+                    <label for="iperceptions4qsurvey" />
+					<div name="iperceptions4qsurvey">
+						<div>
+							<div name="iperceptions4qsurvey" class="oe_inline">
+								<field name="iperceptions4qsurvey" />
+							</div>
+						</div>
+					</div>
+					<label for="iperceptions4qsurvey_script" attrs="{'invisible': [('iperceptions4qsurvey', '=', False)] }"/>
+					<div name="iperceptions4qsurvey_script" attrs="{'invisible': [('iperceptions4qsurvey', '=', False)] }">
+						<div>
+							<div name="iperceptions4qsurvey_script" class="oe_inline">
+								<field name="iperceptions4qsurvey_script" placeholder="put your 4Q Survey Script here"/>
+							</div>
+						</div>
+					</div>
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</openerp>
