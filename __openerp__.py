@@ -20,16 +20,11 @@
 ##############################################################################
 {
     'name': "4QSurvey",
-
-    'summary': """
-        iPerceptions 4Q Survey""",
-
-    'description': """
-         iPerceptions 4Q Survey""",
-
+    'summary': """Perceptions 4Q Survey""",
+    'description': """iPerceptions 4Q Survey""",
     'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
-
+    "license": 'AGPL-3',
     'category': 'Survey',
     'version': '1.0',
 
@@ -41,11 +36,5 @@
         'views/templates.xml',
         'views/website_views.xml',
         'views/res_config.xml'
-    ],
-
-    'demo': [
-    ],
-
-    'tests': [
     ],
 }
